@@ -8,10 +8,8 @@
     imv
     mpv
     obs-studio
-    obsidian
     teams-for-linux
     telegram-desktop
-    vesktop
     zed-editor
     helix
 
