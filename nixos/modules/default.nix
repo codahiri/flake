@@ -14,6 +14,5 @@
     ./timezone.nix
     ./user.nix
     ./zram.nix
-    ./packages.nix
   ];
 }
