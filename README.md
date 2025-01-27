@@ -23,15 +23,15 @@ To get started with this setup, follow these steps:
 2. **Clone the Repository**:
 
 	```bash
-    git clone https://github.com/Andrey0189/nixos-config-reborn
-    cd nixos-config-reborn
+    git clone https://github.com/ilosrim/flake
+    cd flake
     ```
 
 3. **Copy one of the hosts configuration to set up your own**:
 
     ```bash
     cd hosts
-    cp -r slim3 <your_hostname>
+    cp -r nixos <your_hostname>
     cd <your_hostname>
     ```
 
@@ -56,11 +56,10 @@ To get started with this setup, follow these steps:
         system = "x86_64-linux";
     --  homeStateVersion = "24.11";
     ++  homeStateVersion = "<your_home_manager_state_version>";
-    --  user = "amper";
+    --  user = "ilosrim";
     ++  user = "<your_username>";
         hosts = [
-    --    { hostname = "slim3"; stateVersion = "24.05"; }
-    --    { hostname = "330-15ARR"; stateVersion = "24.11"; }
+    --    { hostname = "ilosrim"; stateVersion = "24.11"; }
     ++    { hostname = "<your_hostname>"; stateVersion = "<your_state_version>"; }
         ];
     ...
@@ -69,7 +68,7 @@ To get started with this setup, follow these steps:
 7. **Rebuilding**:
 
     ```bash
-    cd nixos-config-reborn
+    cd flake
     git add .
     nixos-rebuild switch --flake ./#<hostname>
     # or nixos-install --flake ./#<hostname> if you are installing on a fresh system
@@ -83,4 +82,3 @@ To get started with this setup, follow these steps:
 ## 🤝 Contributions
 
 Feel free to fork the repository and submit pull requests if you'd like to contribute improvements. Open issues if you encounter any problems with the config or have ideas for new features.
-
