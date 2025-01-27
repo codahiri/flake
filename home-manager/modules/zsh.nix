@@ -13,7 +13,7 @@
         upd = "nh os switch --update";
         hms = "nh home switch";
 
-        pkgs = "hx ${flakeDir}/nixos/packages.nix";
+        pkgs = "hx ${flakeDir}/home-manager/home-packages.nix";
 
         r = "ranger";
         v = "nvim";
