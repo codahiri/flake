@@ -13,6 +13,7 @@
     telegram-desktop
     vesktop
     zed-editor
+    helix
 
     # CLI utils
     bc
